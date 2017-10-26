@@ -2,7 +2,7 @@
 
 start=`date`
 
-count=1000
+count=15000
 
 for ((i=0; i<=count; i++));
 do
