@@ -9,6 +9,5 @@ do
 done
 
 end=date
-runtime=$((end-start))
 
 echo "script started $start and ended $end"
