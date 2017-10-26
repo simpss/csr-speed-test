@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-start=`date +%s`
+start=date
 
 for i in {1..15000}
 do
@@ -8,7 +8,7 @@ do
     openssl ca -batch -config openssl-ca.cnf -policy signing_policy -extensions signing_req -out servercert.pem -infiles servercert.csr
 done
 
-end=`date +%s`
+end=date
 runtime=$((end-start))
 
-echo "script finished in $runtime"
+echo "script started $start and ended $end"
